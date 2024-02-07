@@ -15,7 +15,7 @@ body {
 
 header {
   background-color: black;
-  color: crimson;
+  color: gold;
   padding: 10px;
   text-align: center;
   position: fixed;
@@ -33,7 +33,7 @@ main {
   margin: 100px auto;
   padding: 25px;
   background-color:white;
-  box-shadow: 0 0 10px crimson;
+  box-shadow: 0 0 100px crimson;
 }
 
 .cover {
@@ -93,7 +93,7 @@ footer {
   text-align: center;
   padding: 10px;
   background-color:black;
-  color: crimson;
+  color: gold;
   bottom: 0;
   width: 100%;
 }
