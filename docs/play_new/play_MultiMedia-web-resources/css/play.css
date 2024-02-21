@@ -8,12 +8,14 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 340px;
 }
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   /*your style rules go in here */
   background-color: white;
+  padding-top: 60px;
 }
 
 main {
@@ -134,3 +136,106 @@ img {
   font-style: italic;
 }
 
+header {
+  background-color: black;
+  color: gold;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 100;
+  box-shadow: 0 4px 8px 0 crimson;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 8rem;
+  text-align: center;
+}
+
+/* we turn off the underline and set the padding and the color */
+
+nav ul li a {
+  text-decoration: none;
+  padding: 0.8rem 1rem;
+  display: block;
+  color: crimson;
+}
+
+/* feedback for the user with a background when hovering hover */
+
+nav ul li:hover {
+  background-color: white;
+  box-shadow: 0 2px 4px 0 crimson;
+}
+
+nav ul li a:hover {
+  color: gold;
+}
+
+/* sub menus */
+
+li ul {
+  display: none;
+  position: absolute;
+  background-color: white;
+  font-size: 15px;
+}
+
+li ul li a {
+  padding: 0.3rem 1.5rem;
+}
+
+nav ul li:hover ul {
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul li ul li {
+  flex: 0 1 auto;
+  width: 7rem;
+  /* the same as the value for flex-basis on the parent li */
+}
+
+/* now for the smaller displays */
+
+@media screen and (max-width: 700px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  li ul {
+    position: static;
+  }
+
+  nav ul li {
+    flex: 0 0 auto;
+    /*the same as flex-grow, flex-shrink, flex-basis */
+    width: 100%;
+  }
+
+  nav ul li:hover ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
