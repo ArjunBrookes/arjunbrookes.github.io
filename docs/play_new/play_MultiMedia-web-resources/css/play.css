@@ -268,24 +268,6 @@ li.home {
     flex-direction: column;
     width: 100%;
   }
-  .content {
-    display: block;
-    float: right;
-    cursor: pointer;
-  }
-
-  /*   but we also need to hide the menu until that content is clicked */
-
-  /* nav ul {
-    display: none;
-  }
-
-  /*when the content is clicked, the ul below it will be made to show */
-  /*  the tilda ~ points to the next sibling selector */
-
-  input[type="checkbox"]:checked ~ ul {
-    display: block;
-  }
- */
+ 
 
 }
