@@ -43,11 +43,11 @@ border-width: 0;
 
 .dramatis {
   padding-top: 20px;
-  margin-left: 50px;
+  text-align: center;
+
 
 }
 .play {
-  margin-left: 20px;
 
 }
 .sceneImage {
@@ -74,6 +74,7 @@ img {
 .character {
   position: relative;
   top: 20px;
+  margin-left: 10px;
 
 }
 .charactername {
@@ -92,16 +93,23 @@ img {
 .location {
   font-size: 18px;
   margin-top: 20px;
+  text-align: center;
+
 }
 .play_location {
+  margin-top: 20px;
+  text-align: center;
 
 }
 
 .firstscene {
+  text-align: center;
   
 }
 
 .scene {
+  padding-top: 20px;
+  text-align: center;
    
 }
 .song {
@@ -116,7 +124,7 @@ img {
   text-align: right;
 }
 .verseline {
-  margin: 0 0 0.4em 8em;
+  margin: 0 0 0.5em 8em;
   font-size: 15px;
 }
 
@@ -142,6 +150,18 @@ header {
   width: 100%;
   z-index: 101;
   
+}
+
+/* we hide the content icon until we are on a small screen */
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.content {
+  display: none;
+  font-size: 2rem;
+  color: white;
 }
 
 nav {
@@ -213,6 +233,14 @@ nav ul li ul li {
   width: 8rem;
   /* the same as the value for flex-basis on the parent li */
 }
+li.home {
+  text-align: left;
+  padding-left: 3rem;
+  margin-right: 3rem;
+  flex: 4 1 100px;
+  align-self: flex-start;
+}
+
 
 /* now for the smaller displays */
 
@@ -240,4 +268,24 @@ nav ul li ul li {
     flex-direction: column;
     width: 100%;
   }
+  .content {
+    display: block;
+    float: right;
+    cursor: pointer;
+  }
+
+  /*   but we also need to hide the menu until that content is clicked */
+
+  /* nav ul {
+    display: none;
+  }
+
+  /*when the content is clicked, the ul below it will be made to show */
+  /*  the tilda ~ points to the next sibling selector */
+
+  input[type="checkbox"]:checked ~ ul {
+    display: block;
+  }
+ */
+
 }
