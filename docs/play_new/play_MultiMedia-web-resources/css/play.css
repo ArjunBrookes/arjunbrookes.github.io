@@ -15,7 +15,7 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   /*your style rules go in here */
   background-color: white;
-  padding-top: 60px;
+  padding-top: 150px;
 }
 
 main {
@@ -27,10 +27,6 @@ main {
   box-shadow: 0 0 100px crimson;
 }
 
-nav {
-  /* this is where your nav list items will be */
- 
-}
 
 section {
 border:none;
@@ -46,7 +42,7 @@ border-width: 0;
 /* If you ahe created any new styles in InDesign and used export tags then you need to add them here */
 
 .dramatis {
-
+  padding-top: 20px;
   margin-left: 50px;
 
 }
@@ -144,17 +140,19 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 101;
+  
 }
 
 nav {
   width: 100%;
   position: fixed;
-  top: 0;
+  top: 10px;
   left: 0;
   background-color: white;
   z-index: 100;
   box-shadow: 0 4px 8px 0 crimson;
+  padding-top: 50px;
 }
 
 nav ul {
@@ -189,7 +187,7 @@ nav ul li:hover {
 }
 
 nav ul li a:hover {
-  color: gold;
+  color: black;
 }
 
 /* sub menus */
@@ -212,7 +210,7 @@ nav ul li:hover ul {
 
 nav ul li ul li {
   flex: 0 1 auto;
-  width: 7rem;
+  width: 8rem;
   /* the same as the value for flex-basis on the parent li */
 }
 
@@ -221,8 +219,12 @@ nav ul li ul li {
 @media screen and (max-width: 700px) {
   nav ul {
     flex-direction: column;
+
   }
 
+  body {
+    padding-top: 400px;
+  }
   li ul {
     position: static;
   }
