@@ -17,14 +17,17 @@ body {
 }
 
 main {
-  background-color: beige;
+  background-color: white;
   width: 70%;
+  min-width: 650px;
   margin: 0 auto;
   padding: 20px;
+  box-shadow: 0 0 100px crimson;
 }
 
 nav {
   /* this is where your nav list items will be */
+ 
 }
 
 section {
@@ -41,54 +44,80 @@ border-width: 0;
 /* If you ahe created any new styles in InDesign and used export tags then you need to add them here */
 
 .dramatis {
-  text-align: center;
+
+  margin-left: 50px;
 
 }
 .play {
+  margin-left: 20px;
 
 }
-figure {
+.sceneImage {
+  width: 60%;
+  max-width: 500px;
+  margin: 20px auto;
+}
 
+.Basic-Text-Frame{
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 img {
+  width: 100%;
+  display: block;
 
 }
 .act {
 
 }
 .character {
+  position: relative;
+  top: 20px;
 
 }
 .charactername {
+  
 
 }
+.char_name {
+  font-weight: bold;
+}
+
 .dramatishead {
+  margin-bottom: 20px;
 
 }
 
 .location {
-
+  font-size: 18px;
+  margin-top: 20px;
 }
 .play_location {
 
 }
 
 .firstscene {
-
+  
 }
 
 .scene {
-
+   
 }
 .song {
+  text-align: center;
 
 }
 .stagedirection {
-
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  text-align: right;
 }
 .verseline {
   margin: 0 0 0.4em 8em;
+  font-size: 15px;
 }
 
 .prose {
@@ -96,9 +125,10 @@ img {
 }
 
 .character_role {
+  font-style: italic;
 
 }
 .stage_directions_inline {
-  
+  font-style: italic;
 }
 
