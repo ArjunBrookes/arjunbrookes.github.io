@@ -280,8 +280,6 @@ margin-right: auto;
   }
 
   nav{
-    position: fixed;
-    margin-top: 0;
     padding-top: 0;
     background-color: black;
   }
