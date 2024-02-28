@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
   /*your style rules go in here */
   background-color: white;
   padding-top: 150px;
@@ -46,7 +46,9 @@ border-width: 0;
 .dramatis {
   margin-bottom: 3rem;
   padding-bottom: 1 rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 .play {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -83,13 +85,18 @@ img {
   top: 20px;
   margin: 12px 0 0 0;
 }
-.charactername {
-  
-
+.char_name{
+  color: crimson;
+  font-weight: bold;
 }
 
 .dramatishead {
-  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: white;
+  background-color: crimson;
+  margin: 0.7rem 0;
+  padding: 0.54rem;
+  text-align: center;
 }
 
 .location {
@@ -148,9 +155,8 @@ img {
 
 .character_role {
   font-style: italic;
-  color: crimson;
-
 }
+
 .stage_directions_inline {
   font-style: italic;
   color: crimson;
