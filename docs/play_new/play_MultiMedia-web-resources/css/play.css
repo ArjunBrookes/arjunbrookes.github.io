@@ -295,6 +295,25 @@ audio{
     scroll-padding: 50px;
   }
 
+  .dramatis{
+    font-size: 1rem;
+  }
+
+  .verseline{
+    font-size: 0.8rem;
+  }
+
+  .song{
+    font-size: 0.8rem;
+  }
+
+  .prose{
+    font-size: 0.8rem;
+  }
+
+  .character{
+    font-size: 0.8rem;
+  }
   nav{
     padding-top: 5px;
     background-color: black;
