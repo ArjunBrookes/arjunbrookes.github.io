@@ -17,7 +17,7 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   /*your style rules go in here */
   background-color: white;
-  padding-top: 70px;
+  padding-top: 150px;
 }
 
 main {
@@ -169,11 +169,15 @@ img {
   color: crimson;
 }
 
-.titlewithin{
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-size: 30px;
+header {
+  background-color: black;
+  color: gold;
+  padding: 10px;
   text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 101;
 }
 
 
@@ -184,12 +188,12 @@ nav {
   position: fixed;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 0.8rem;
-  top: 0px;
+  top: 10px;
   left: 0;
-  background-color: black;
+  background-color: white;
   z-index: 100;
   box-shadow: 0 4px 8px 0 crimson;
-  /* padding-top: 10px; */
+  padding-top: 50px;
 }
 
 input[type="checkbox"] {
@@ -219,13 +223,12 @@ nav ul li a {
   margin: 0.5rem 0;
   display: block;
   color: black;
-  color: gold;
 }
 
 /* feedback for the user with a background when hovering hover */
 
 nav ul li:hover {
-  background-color: black;
+  background-color: white;
   box-shadow: 0 2px 4px 0 crimson;
 }
 
@@ -238,7 +241,7 @@ nav ul li a:hover {
 li ul {
   display: none;
   position: absolute;
-  background-color: black;
+  background-color: white;
   font-size: 0.8rem;
 }
 
@@ -290,7 +293,7 @@ margin-right: auto;
   }
 
   nav{
-    padding-top: 5px;
+    padding-top: 0;
     background-color: black;
   }
   
@@ -333,10 +336,10 @@ margin-right: auto;
   }
 
   .titlewithin{
+    display: contents;
     margin-top: 20px;
     margin-bottom: 20px;
-    font-size: 30px;
-    text-align: center;
+    font-size: 20px;
   }
 
   .hamburger{
