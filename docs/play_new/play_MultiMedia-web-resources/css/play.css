@@ -186,7 +186,7 @@ nav {
   width: 100%;
   position: fixed;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   top: 10px;
   left: 0;
   background-color: white;
@@ -272,6 +272,15 @@ li.home {
   font-size: 50px;
 }
 
+input[type="checkbox"] {
+  display: none;
+}
+
+.content{
+  display: none;
+  font-size: 2rem;
+  color: white;
+}
 
 /* now for the smaller displays */
 
@@ -300,19 +309,31 @@ li.home {
     text-wrap: nowrap;
   }
 
-
-
   nav {
     width: 100%;
     position: fixed;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     /* top: 10px; */
     left: 0;
     background-color: white;
     z-index: 100;
     box-shadow: 0 4px 8px 0 crimson;
     padding-top: 35px;
+  }
+
+  .content{
+    display:block;
+    float: right;
+    cursor: pointer;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  input[type="checkbox"]:checked ~ ul {
+    display: block;
   }
 
   li.home {
@@ -324,6 +345,8 @@ li.home {
   }
 
   nav ul {
+    list-style: none;
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
