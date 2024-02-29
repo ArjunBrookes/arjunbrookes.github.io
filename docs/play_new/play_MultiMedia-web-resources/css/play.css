@@ -83,6 +83,7 @@ img {
   font-size: 1rem;
   color: crimson;
   font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   position: relative;
   top: 20px;
   margin: 12px 0 0 0;
@@ -133,6 +134,9 @@ img {
 
 .song {
    color: crimson;
+   font-size: 1.1rem;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   text-align: center;
 }
 
 .stagedirection {
@@ -144,19 +148,20 @@ img {
 }
 
 .verseline {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   margin: 0 0 0.5em 10em;
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin-bottom: 6px;
   text-indent: -10px;
 }
 
 .prose {
+  font-family: Georgia, 'Times New Roman', Times, serif;
   margin: 0 0 0.5em 10em;
   font-size: 1rem;
   margin-bottom: 6px;
   text-indent: -10px;
   font-style: italic;
-  
 }
 
 .character_role {
